@@ -8,8 +8,6 @@ function App() {
         <Link to="/list"><button class="btnestilo">Lista</button></Link>
         <Link to="/search"><button class="btnestilo">Buscar</button></Link>
       <Outlet />
-      <h1>Pokédex</h1>
-      <p>Projeto em React consumindo API de Pokémon</p>
     </div>
   );
 }
