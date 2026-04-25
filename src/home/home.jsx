@@ -3,7 +3,7 @@ import "../App.jsx";
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <h1>Pokédex Interativa</h1>
       <p>Projeto em React consumindo API de Pokémon</p>
       <p>Bem-vindo à Pokédex Interativa! Este projeto foi desenvolvido utilizando React e integra uma API de Pokémon para fornecer informações detalhadas de forma dinâmica e intuitiva.
