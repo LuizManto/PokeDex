@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('src/assets/pokemonbackground.jpg');
+  background-image: url('/pokemonbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -113,3 +113,23 @@ body {
   font-weight: bold;
 }
 /* Fim do estilo da lista de pokémons */
+
+
+
+/* Estilo do container de detalhes */
+.details-container {
+  background-color: rgba(255, 255, 255, 0.623);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+/* Fim do estilo de detalhes */
