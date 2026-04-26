@@ -19,7 +19,7 @@ function Pokelist() {
   }, [limit]);
 
   return (
-    <div>
+    <div className="pokelist-container">
       <h1>Pokédex</h1>
       <div className="pokelist">
           {pokemons.map(p => (
