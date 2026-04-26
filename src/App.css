@@ -1,39 +1,71 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background-image: url('src/assets/pokemonbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   color: rgb(221, 0, 0);
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   gap: 10px;
-  position: absolute;
-  top: 20px;
+  background-color: rgba(255, 255, 255, 0.856);
   width: 100%;
-  z-index: 10;
+  padding: 20px 0;
 }
 
-.home{
+.btnestilo {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.btnestilo:hover {
+  background-color: rgb(150, 40, 40);
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding: 20px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-}
-.btnestilo{
-  cursor: pointer;
-  width: 60px;
-  height: 40px;
-  margin: 0 5px;
-  background-color: brown;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  border: none;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.664); 
+  padding: 20px;
+  border-radius: 10px;
 }
 
+.home h1 {
+  margin-bottom: 10px;
+}
 
+.home p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

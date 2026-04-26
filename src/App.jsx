@@ -3,12 +3,17 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="navbar">
-        <Link to="/"><button class="btnestilo">Home</button></Link>
-        <Link to="/list"><button class="btnestilo">Lista</button></Link>
-        <Link to="/search"><button class="btnestilo">Buscar</button></Link>
-      <Outlet />
-    </div>
+    <>
+      <div className="navbar">
+        <Link to="/"><button className="btnestilo">Home</button></Link>
+        <Link to="/list"><button className="btnestilo">Lista</button></Link>
+        <Link to="/search"><button className="btnestilo">Buscar</button></Link>
+      </div>
+
+      <div className="content">
+        <Outlet />
+      </div>
+    </>
   );
 }
 
