@@ -135,6 +135,14 @@ body {
 /* Fim do estilo de detalhes */
 
 /* Estilo da search */
+.search-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
 .busca {
   width: 200px;
   height: 20px;
