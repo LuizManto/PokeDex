@@ -14,8 +14,8 @@ function Search() {
     <div>
       <h1>Buscar Pokémon</h1>
 
-      <input onChange={(e) => setName(e.target.value)} />
-      <button onClick={buscar}>Buscar</button>
+      <input className="busca" onChange={(e) => setName(e.target.value)} />
+      <button className="btnbusca" onClick={buscar}>Buscar</button>
 
       {pokemon && (
         <div>
