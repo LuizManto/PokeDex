@@ -4,21 +4,30 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: titulo;
+  src: url(fontes/Pokemon\ Solid.ttf);
+}
+
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: titulo;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
   background-image: url('/pokemonbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
-  color: rgb(221, 0, 0);
+  color: rgb(255, 46, 46);
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.856);
+  background-color: rgba(255, 255, 255, 0.904);
   width: 100%;
   padding: 20px 0;
 }
@@ -54,7 +63,7 @@ body {
   align-items: center;
   text-align: center;
   max-width: 700px;
-  background: rgba(255, 255, 255, 0.664); 
+  background: rgba(255, 255, 255, 0.75); 
   padding: 20px;
   border-radius: 10px;
 }
@@ -78,7 +87,7 @@ body {
  }
  
 .pokelist {
-  background-color: rgba(255, 255, 255, 0.623);
+  background-color: rgba(255, 255, 255, 0.75);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
@@ -141,7 +150,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
 }
 .busca {
   width: 200px;
