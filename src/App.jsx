@@ -8,6 +8,7 @@ function App() {
         <Link to="/"><button className="btnestilo">Home</button></Link>
         <Link to="/list"><button className="btnestilo">Lista</button></Link>
         <Link to="/search"><button className="btnestilo">Buscar</button></Link>
+        <Link to="/inicial"><button className="btnestilo">Inicial</button></Link>
       </div>
 
       <div className="content">

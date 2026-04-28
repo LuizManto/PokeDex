@@ -5,6 +5,7 @@ import Home from "./home/home";
 import Pokelist from "./pokelist";
 import Details from "./details";
 import Search from "./search";
+import Inicial from "./inicial";
 
 import {
   createBrowserRouter,
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "list", element: <Pokelist /> },
       { path: "pokemon/:name", element: <Details /> },
       { path: "search", element: <Search /> },
+      { path: "inicial", element: <Inicial /> },
     ],
   },
 ]);

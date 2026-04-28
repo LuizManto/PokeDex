@@ -179,3 +179,33 @@ body {
   transform: scale(1.05);
 }
 /* Fim do estilo da search */
+
+/* Estilo da página pokeinicial */
+.opcoes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.card img {
+  width: 120px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.selecionado {
+  border: 3px solid red;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+/* Fim do estilo pokeincial */
