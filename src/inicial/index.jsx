@@ -3,6 +3,13 @@ import { useEffect, useState } from "react";
 function Inicial() {
     const [pokemon, setPokemon] = useState([]);
     const [selectedPokemon, setSelectedPokemon] = useState(null);
+    const [generation, setGeneration] = useState("");
+
+    useEffect(() => {
+        fetch(`https://pokeapi.co/api/v2/pokemon-species/${name}`)
+            .then(res => res.json())
+            .then(data => setGeneration(data.generation.name));
+    }, [name]);
 
     useEffect(() => {
         const nomes = ["bulbasaur", "charmander", "squirtle"];
@@ -27,14 +34,20 @@ function Inicial() {
             <div key={pokemon.name} onClick={() => escolherPokemon(pokemon.name)} className={`card ${selectedPokemon === pokemon.name ? "selecionado" : ""}`}>
 
             <img src={pokemon.sprites.front_default} />
-            <p>{pokemon.name}</p>
+            <h3>{pokemon.name}</h3>
+            <p>ID: {pokemon.id}</p>
+            <p>Geração: {generation.replace("generation-", "Gen ").     toUpperCase()}</p>
+            <p>Habilidades: {pokemon.abilities.map(a => a.ability.name).    join(", ")}</p>
+            <p>Altura: {pokemon.height}</p>
+            <p>Peso: {pokemon.weight}</p>
+            <p>Tipos: {pokemon.types.map(t => t.type.name).join(", ")}</    p>                    
             
           </div>
         ))}
       </div>
 
             {selectedPokemon && (
-                <p>Você escolheu {selectedPokemon}!</p>
+                <h2>Você escolheu {selectedPokemon}!</h2>
             )}
         </div>  
     );
